@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace WpfApp2
 {
@@ -28,6 +29,40 @@ namespace WpfApp2
         {
             foreach (var drink in myDrinks)
             {
+             StackPanel sp = new StackPanel();
+                CheckBox cb = new CheckBox();
+                Slider sl = new Slider();
+                Label lb = new Label();
+
+                cb.Content =$"{drink.Key} ： {drink.Value}元";
+                cb.FontFamily = new FontFamily("Consolas");
+                cb.FontSize = 18;
+                cb.Foreground = Brushes.Blue;
+                cb.Width = 200;
+                //cb.Height = 60;
+                cb.Margin = new Thickness(5);
+
+                sl.Width = 100;
+                //sl.Height = 60;
+                sl.Value = 0;
+                sl.Minimum = 0;
+                sl.Maximum = 10;
+
+                lb.Width = 50;
+                //lb.Height = 60;
+                lb.Content = "0";
+                lb.FontFamily = new FontFamily("Consolas");
+                lb.FontSize = 18;
+
+                sp.Orientation = Orientation.Horizontal;
+                //sp.Height = 60;
+                sp.Children.Add(cb);
+                sp.Children.Add(sl);
+                sp.Children.Add(lb);
+
+                stackpanel_DrinkMenu.Children.Add(sp);
+                //stackpanel_DrinkMenu.Height = myDrinks.Count * 60;
+                GroupBox_DrinkMenu.Height = stackpanel_DrinkMenu.Height;
 
             }
 
@@ -41,6 +76,9 @@ namespace WpfApp2
             myDrinks.Add("綠茶小杯", 40);
             myDrinks.Add("咖啡大杯", 80);
             myDrinks.Add("咖啡小杯", 40);
+            myDrinks.Add("可樂大杯", 30);
+            myDrinks.Add("可樂小杯", 20);
+
         }
 
         private void PlaceOrder(object sender, TextChangedEventArgs e)
