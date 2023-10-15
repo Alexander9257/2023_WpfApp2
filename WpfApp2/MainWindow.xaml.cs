@@ -14,8 +14,23 @@ namespace WpfApp2
         Dictionary<string , int> order = new Dictionary<string , int>();
         public MainWindow()
         {
+            
             InitializeComponent();
+            
+            //新增飲料品項
             AddNewDrink(drinks);
+
+            //顯示所有飲料品項
+            DisplayDrinkMenu(drinks);
+        }
+
+        private void DisplayDrinkMenu(Dictionary<string, int> myDrinks)
+        {
+            foreach (var drink in myDrinks)
+            {
+
+            }
+
         }
 
         private void AddNewDrink(Dictionary<string, int> myDrinks)
