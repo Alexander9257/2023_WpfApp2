@@ -5,11 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="463" Width="664">
-    <Grid>
-        <StackPanel x:Name="StackPanel1" Background="#FFDCBDB1" Margin="30,10,30,112"/>
+        Title="飲料點餐系統" Height="1049" Width="718" Background="#FFFDFCFC">
+    <Grid HorizontalAlignment="Center" Width="722" Margin="0,10,0,0" Background="#FFFDFCFC" Height="963" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="347*"/>
+            <RowDefinition Height="280*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="330*"/>
+            <ColumnDefinition Width="391*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="StackPanel1" Background="#FFDCBDB1" Margin="0,106,88,0" HorizontalAlignment="Right" Width="604" Grid.ColumnSpan="2" Height="475" VerticalAlignment="Top" Grid.RowSpan="2"/>
         <StackPanel x:Name="StackPanel2" Background="#FFEBF9CA"
-        Orientation="Horizontal" Margin="30,10,30,361">
+        Orientation="Horizontal" Margin="0,0,88,267" HorizontalAlignment="Right" Width="604" Height="81" VerticalAlignment="Bottom" Grid.ColumnSpan="2">
             <Label x:Name="Label1" Content="紅茶大杯" Width="180"
                    VerticalAlignment="Center" FontSize="18"
                    FontWeight="Bold" HorizontalAlignment="Center" />
@@ -17,10 +25,10 @@
                    VerticalAlignment="Center" FontSize="18"
                    FontWeight="Bold" HorizontalAlignment="Center" />
             <TextBox x:Name="TextBox1" Background="#FFE9F9F8" Width="125" Height="40"
-                     VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Left" TextChanged="PlaceOrder"/>
+                     VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Right" TextChanged="PlaceOrder"/>
         </StackPanel>
         <StackPanel x:Name="StackPanel3" Background="#FFEBF9CA"
-Orientation="Horizontal" Margin="30,62,30,307">
+Orientation="Horizontal" Margin="0,0,88,346" HorizontalAlignment="Right" Width="604" Height="81" VerticalAlignment="Bottom" Grid.ColumnSpan="2">
             <Label x:Name="Label4" Content="紅茶小杯" Width="180"
            VerticalAlignment="Center" FontSize="18"
            FontWeight="Bold" HorizontalAlignment="Center" />
@@ -28,10 +36,10 @@ Orientation="Horizontal" Margin="30,62,30,307">
            VerticalAlignment="Center" FontSize="18"
            FontWeight="Bold" HorizontalAlignment="Center" />
             <TextBox x:Name="TextBox2" Background="#FFE9F9F8" Width="125" Height="40"
-             VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Left" TextChanged="PlaceOrder"/>
+             VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Right" TextChanged="PlaceOrder"/>
         </StackPanel>
         <StackPanel x:Name="StackPanel4" Background="#FFEBF9CA"
-Orientation="Horizontal" Margin="30,110,30,259">
+Orientation="Horizontal" Margin="30,266,0,0" HorizontalAlignment="Left" Width="604" Height="81" VerticalAlignment="Top" Grid.ColumnSpan="2">
             <Label x:Name="Label7" Content="綠茶大杯" Width="180"
            VerticalAlignment="Center" FontSize="18"
            FontWeight="Bold" HorizontalAlignment="Center" />
@@ -39,10 +47,10 @@ Orientation="Horizontal" Margin="30,110,30,259">
            VerticalAlignment="Center" FontSize="18"
            FontWeight="Bold" HorizontalAlignment="Center" />
             <TextBox x:Name="TextBox3" Background="#FFE9F9F8" Width="125" Height="40"
-             VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Left" TextChanged="PlaceOrder"/>
+             VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Right" TextChanged="PlaceOrder"/>
         </StackPanel>
         <StackPanel x:Name="StackPanel5" Background="#FFEBF9CA"
-Orientation="Horizontal" Margin="30,159,30,213">
+Orientation="Horizontal" Margin="0,0,88,109" HorizontalAlignment="Right" Width="604" Height="80" VerticalAlignment="Bottom" Grid.ColumnSpan="2">
             <Label x:Name="Label10" Content="綠茶小杯" Width="180"
            VerticalAlignment="Center" FontSize="18"
            FontWeight="Bold" HorizontalAlignment="Center" />
@@ -50,10 +58,10 @@ Orientation="Horizontal" Margin="30,159,30,213">
            VerticalAlignment="Center" FontSize="18"
            FontWeight="Bold" HorizontalAlignment="Center" />
             <TextBox x:Name="TextBox4" Background="#FFE9F9F8" Width="125" Height="40"
-             VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Left" TextChanged="PlaceOrder"/>
+             VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Right" TextChanged="PlaceOrder"/>
         </StackPanel>
         <StackPanel x:Name="StackPanel6" Background="#FFEBF9CA"
-Orientation="Horizontal" Margin="30,207,30,164">
+Orientation="Horizontal" Margin="0,0,88,382" HorizontalAlignment="Right" Width="604" Height="85" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Grid.RowSpan="2">
             <Label x:Name="Label13" Content="大杯咖啡" Width="180"
            VerticalAlignment="Center" FontSize="18"
            FontWeight="Bold" HorizontalAlignment="Center" />
@@ -61,10 +69,10 @@ Orientation="Horizontal" Margin="30,207,30,164">
            VerticalAlignment="Center" FontSize="18"
            FontWeight="Bold" HorizontalAlignment="Center" />
             <TextBox x:Name="TextBox5" Background="#FFE9F9F8" Width="125" Height="40"
-             VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Left" TextChanged="PlaceOrder"/>
+             VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Right" TextChanged="PlaceOrder"/>
         </StackPanel>
         <StackPanel x:Name="StackPanel7" Background="#FFEBF9CA"
-Orientation="Horizontal" Margin="30,254,30,112">
+Orientation="Horizontal" Margin="0,424,88,0" HorizontalAlignment="Right" Width="604" Grid.ColumnSpan="2" Height="85" VerticalAlignment="Top">
             <Label x:Name="Label16" Content="小杯咖啡" Width="180"
            VerticalAlignment="Center" FontSize="18"
            FontWeight="Bold" HorizontalAlignment="Center" />
@@ -72,8 +80,10 @@ Orientation="Horizontal" Margin="30,254,30,112">
            VerticalAlignment="Center" FontSize="18"
            FontWeight="Bold" HorizontalAlignment="Center" />
             <TextBox x:Name="TextBox6" Background="#FFE9F9F8" Width="125" Height="40"
-             VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Left" TextChanged="PlaceOrder"/>
+             VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Right" TextChanged="PlaceOrder"/>
         </StackPanel>
-        <Button x:Name="OrderButton" Content="訂購" HorizontalAlignment="Left" Margin="504,35,0,0" VerticalAlignment="Top" Height="52" Width="87" FontSize="22"/>
+        <Button x:Name="OrderButton" Content="訂購" HorizontalAlignment="Right" Margin="0,0,133,361" VerticalAlignment="Bottom" Height="52" Width="87" FontSize="22" Grid.Column="1" Click="OrderButton_Click"/>
+        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="30,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Background="#FFE7EAB5" Grid.ColumnSpan="2" Height="281" Width="658" FontSize="18"/>
+
     </Grid>
 </Window>
